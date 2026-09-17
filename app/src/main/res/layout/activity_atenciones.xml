@@ -7,21 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".vistas.AtencionesActivity">
 
-    <TextView
-        android:id="@+id/textView22"
-        android:layout_width="330dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="24dp"
-        android:text="Programar Atención"
-        android:textAlignment="center"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
     <ScrollView
         android:id="@+id/scrollView3"
         android:layout_width="397dp"
@@ -38,13 +23,9 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="30dp" />
-
             <TextView
                 android:id="@+id/textView2"
-                android:layout_width="401dp"
+                android:layout_width="match_parent"
                 android:layout_height="28dp"
                 android:text="Lista de Mascota:"
                 android:textSize="20sp" />
@@ -171,8 +152,23 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rvAtenciones8"
                 android:layout_width="match_parent"
-                android:layout_height="159dp" />
+                android:layout_height="98dp" />
 
         </LinearLayout>
     </ScrollView>
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:text="Programar Atención"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.722" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
