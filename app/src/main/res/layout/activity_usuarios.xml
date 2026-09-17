@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.UsuariosActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="375dp"
+        android:layout_height="422dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/rvUsuarios5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872">
+
+        <EditText
+            android:id="@+id/txtNombre5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <EditText
+            android:id="@+id/txtUsuario5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Usuario"
+            android:inputType="text" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <EditText
+            android:id="@+id/txtContraseña5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="28dp" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Seleccionar rol: Vet o Asist"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/spRol5"
+            android:layout_width="match_parent"
+            android:layout_height="32dp" />
+
+        <Switch
+            android:id="@+id/swActivo"
+            android:layout_width="154dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="40dp"
+            android:text="Activo" />
+
+        <Button
+            android:id="@+id/btnGuardar5"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:layout_marginBottom="116dp"
+            android:text="Guardar" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvUsuarios5"
+        android:layout_width="374dp"
+        android:layout_height="171dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.945" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="330dp"
+        android:layout_height="30dp"
+        android:text="Registrar y Gestionar Usuarios"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734" />
+</androidx.constraintlayout.widget.ConstraintLayout>

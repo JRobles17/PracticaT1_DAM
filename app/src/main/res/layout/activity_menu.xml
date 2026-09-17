@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".vistas.MenuActivity">
+
+    <TableLayout
+        android:layout_width="318dp"
+        android:layout_height="225dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnCerrarSesion2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.381">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="51dp">
+
+            <Button
+                android:id="@+id/btnClientes2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clientes" />
+
+            <Space
+                android:layout_width="92dp"
+                android:layout_height="5dp" />
+
+            <Button
+                android:id="@+id/btnMascotas2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mascotas" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnUsuarios2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Usuarios" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnProductos2"
+                android:layout_width="match_parent"
+                android:layout_height="43dp"
+                android:text="Productos" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="184dp"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnServicios2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Servicios" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnAtencion2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Atenciones" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnVentas2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ventas" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnReportes2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Reportes" />
+
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="375dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="80dp"
+        android:text="Bienvenido de nuevo, {nombre}"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCerrarSesion2"
+        android:layout_width="337dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="152dp"
+        android:text="Cerrar sesión"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

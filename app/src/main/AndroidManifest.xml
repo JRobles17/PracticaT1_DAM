@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Veterinaria">
+        <activity
+            android:name=".vistas.VentasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.AtencionesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.ProductosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.ServiciosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.UsuariosActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.MascotasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.ClienteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.MenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.ReportesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".vistas.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

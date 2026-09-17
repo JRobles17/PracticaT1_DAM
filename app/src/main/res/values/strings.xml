@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Veterinaria</string>
+    <string name="title_activity_login2">LoginActivity2</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string-array name="roles_usuario">
+        <item>Veterinario</item>
+        <item>Asistente</item>
+    </string-array>
+
+    <string-array name="estados_atencion">
+        <item>PENDIENTE</item>
+        <item>CONFIRMADA</item>
+        <item>ATENDIDA</item>
+        <item>POSTERGADA</item>
+        <item>CANCELADA</item>
+    </string-array>
+
+    <string-array name="tipos_venta">
+        <item>Producto</item>
+        <item>Servicio</item>
+    </string-array>
+</resources>
